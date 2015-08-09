@@ -66,7 +66,6 @@ public class MainController {
             map.addAttribute("message", "wrong phone format. Use only numbers and +. For example +380995679376");
             return "addPage";
         }
-
         Contact persistContact = contactService.findByAddress(vAddress);
         if (persistContact == null) {
             Contact nContact = new Contact();
